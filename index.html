@@ -315,47 +315,55 @@
    target="_blank">
       Contactar
       </a>
-<!-- TELEGRAM -->
+<!-- BOTONES REDES SOCIALES -->
 
-<a href="https://t.me/WhiteF1nance"
-   class="telegram-btn"
-   target="_blank">
-   Telegram
-</a>
+<div class="social-buttons">
 
-<!-- FACEBOOK -->
+  <a href="https://t.me/WhiteF1nance"
+     class="telegram-btn"
+     target="_blank">
+     Telegram
+  </a>
 
-<a href="https://www.facebook.com/profile.php?id=61590398821660&__tn__=-UC*F"
-   class="facebook-btn"
-   target="_blank">
-   Facebook
-</a>
+  <a href="https://www.facebook.com/profile.php?id=61590398821660&__tn__=-UC*F"
+     class="facebook-btn"
+     target="_blank">
+     Facebook
+  </a>
 
-<!-- INSTAGRAM -->
+  <a href="https://www.instagram.com/whitef1nance/"
+     class="instagram-btn"
+     target="_blank">
+     Instagram
+  </a>
 
-<a href="https://www.instagram.com/whitef1nance/"
-   class="instagram-btn"
-   target="_blank">
-   Instagram
-</a>
+  <a href="https://wa.me/525547763462?text=Hola%20quiero%20información%20sobre%20WhiteFinance"
+     class="whatsapp-btn"
+     target="_blank">
+     WhatsApp
+  </a>
 
-<!-- WHATSAPP -->
-
-<a href="https://wa.me/525547763462?text=Hola%20quiero%20información%20sobre%20WhiteFinance"
-   class="whatsapp-btn"
-   target="_blank">
-   WhatsApp
-</a>
+</div>
 
 <style>
 
-/* TELEGRAM */
+/* CONTENEDOR */
 
-.telegram-btn{
+.social-buttons{
     position:fixed;
     bottom:25px;
-    left:25px;
-    background:#0088cc;
+    left:50%;
+    transform:translateX(-50%);
+    display:flex;
+    gap:18px;
+    z-index:999;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+/* ESTILO GENERAL */
+
+.social-buttons a{
     color:white;
     padding:16px 24px;
     border-radius:50px;
@@ -363,45 +371,38 @@
     font-weight:bold;
     font-size:18px;
     box-shadow:0 0 20px rgba(0,0,0,0.3);
-    z-index:999;
     transition:0.3s;
 }
 
-.telegram-btn:hover{
+/* HOVER */
+
+.social-buttons a:hover{
     transform:scale(1.1);
+}
+
+/* TELEGRAM */
+
+.telegram-btn{
+    background:#0088cc;
+}
+
+.telegram-btn:hover{
     box-shadow:0 0 25px #0088cc;
 }
 
 /* FACEBOOK */
 
 .facebook-btn{
-    position:fixed;
-    bottom:25px;
-    left:50%;
-    transform:translateX(-50%);
     background:#1877F2;
-    color:white;
-    padding:16px 24px;
-    border-radius:50px;
-    text-decoration:none;
-    font-weight:bold;
-    font-size:18px;
-    box-shadow:0 0 20px rgba(0,0,0,0.3);
-    z-index:999;
-    transition:0.3s;
 }
 
 .facebook-btn:hover{
-    transform:translateX(-50%) scale(1.1);
     box-shadow:0 0 25px #1877F2;
 }
 
 /* INSTAGRAM */
 
 .instagram-btn{
-    position:fixed;
-    bottom:25px;
-    right:190px;
     background:linear-gradient(
         45deg,
         #f09433,
@@ -410,46 +411,41 @@
         #cc2366,
         #bc1888
     );
-    color:white;
-    padding:16px 24px;
-    border-radius:50px;
-    text-decoration:none;
-    font-weight:bold;
-    font-size:18px;
-    box-shadow:0 0 20px rgba(0,0,0,0.3);
-    z-index:999;
-    transition:0.3s;
 }
 
 .instagram-btn:hover{
-    transform:scale(1.1);
     box-shadow:0 0 25px #dc2743;
 }
 
 /* WHATSAPP */
 
 .whatsapp-btn{
-    position:fixed;
-    bottom:25px;
-    right:25px;
     background:#25D366;
-    color:white;
-    padding:16px 24px;
-    border-radius:50px;
-    text-decoration:none;
-    font-weight:bold;
-    font-size:18px;
-    box-shadow:0 0 20px rgba(0,0,0,0.3);
-    z-index:999;
-    transition:0.3s;
 }
 
 .whatsapp-btn:hover{
-    transform:scale(1.1);
     box-shadow:0 0 25px #25D366;
 }
 
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .social-buttons{
+        width:100%;
+        padding:0 10px;
+        gap:10px;
+    }
+
+    .social-buttons a{
+        font-size:14px;
+        padding:14px 18px;
+    }
+
+}
+
 </style>
+
 
   </section>
 
